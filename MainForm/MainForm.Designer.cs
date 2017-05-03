@@ -180,6 +180,7 @@ namespace MainForm
 			this.button8.TabIndex = 2;
 			this.button8.Text = "Task 3.3";
 			this.button8.UseVisualStyleBackColor = true;
+			this.button8.Click += new System.EventHandler(this.Button8Click);
 			// 
 			// button7
 			// 

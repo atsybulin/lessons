@@ -34,20 +34,20 @@ namespace MainForm
 	      Form1 frm11 = new Form1();
 	      frm11.ShowDialog();
 	    }
-	    void Button4Click(object sender, EventArgs e)
+	    void Button2Click(object sender, EventArgs e)
 	    {
-	      Form4 frm23 = new Form4();
-	      frm23.ShowDialog();
+	      Form2 frm21 = new Form2();
+	      frm21.ShowDialog();
 	    }
 	    void Button3Click(object sender, EventArgs e)
 	    {
 	      Form3 frm22 = new Form3();
 	      frm22.ShowDialog();
 	    }
-	    void Button2Click(object sender, EventArgs e)
+	    void Button4Click(object sender, EventArgs e)
 	    {
-	      Form2 frm21 = new Form2();
-	      frm21.ShowDialog();
+	      Form4 frm23 = new Form4();
+	      frm23.ShowDialog();
 	    }
 		void Button5Click(object sender, EventArgs e)
 		{
@@ -63,6 +63,11 @@ namespace MainForm
 		{
 	      Form7 frm32 = new Form7();
 	      frm32.ShowDialog();
+		}
+		void Button8Click(object sender, EventArgs e)
+		{
+	      Form8 frm33 = new Form8();
+	      frm33.ShowDialog();
 		}
 	}
 }
