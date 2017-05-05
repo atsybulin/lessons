@@ -69,5 +69,10 @@ namespace MainForm
 	      Form8 frm33 = new Form8();
 	      frm33.ShowDialog();
 		}
+		void Button9Click(object sender, EventArgs e)
+		{
+	      Form9 frm34 = new Form9();
+	      frm34.ShowDialog();
+		}
 	}
 }

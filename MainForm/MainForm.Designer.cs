@@ -171,6 +171,7 @@ namespace MainForm
 			this.button9.TabIndex = 3;
 			this.button9.Text = "Task 3.4";
 			this.button9.UseVisualStyleBackColor = true;
+			this.button9.Click += new System.EventHandler(this.Button9Click);
 			// 
 			// button8
 			// 
