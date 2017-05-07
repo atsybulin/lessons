@@ -36,11 +36,21 @@ namespace MainForm
 		void Button1Click(object sender, EventArgs e)
 		{
 			int n = (int)numericUpDown1.Value;
-			double m = factorial(n);
+//			double m = factorial(n); // рекурсия
+			double m = 1;
+			for (int i = 2; i <= n; i++) {
+				m *= i;
+			}
+			textBox1.Text += n.ToString() + "! = " + m.ToString() + "\r\n";
+
+/*			2468.0 = 2*1000 + 4*100 + 6*10 + 8 * 1
+			1) 2468.0 / 10 = 246.8  > 1  (c = 1)
+			2) 246.8  / 10 = 24.68  > 1  (c = 2)
+			3) 24.68  / 10 = 2.468  > 1  (c = 3)
+			4) 2.468  / 10 = 0.2468 < 1  (c = 4)
+*/
 			int c = 0;
 
-			textBox1.Text += n.ToString() + "! = " + m.ToString() + "\r\n";
-			
 			while (m >= 1) {
 				m /= 10;
 				c++;

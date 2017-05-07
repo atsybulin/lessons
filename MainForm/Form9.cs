@@ -42,23 +42,29 @@ namespace MainForm
 			}
 			
 			// Way 2
-			n=1;
-			while (n<=5) {
+			n = 1;
+			while (n <= 5) {
 				sum2 *= 2 * x + Math.Sqrt(n);
 				n++;
 			}
 			
 			//Way 3
-			n=1;
+			n = 1;
 			do {
 				sum3 *= 2 * x + Math.Sqrt(n);
 				n++;
-			} while (n<=5);
+			} while (n <= 5);
 			
 			// Result
 			textBox1.Text = sum1.ToString();
 			textBox2.Text = sum2.ToString();
 			textBox3.Text = sum3.ToString();
+			
+			textBox4.Text += "Sum by Way 1 = " + sum1.ToString() + "\r\n";
+			textBox4.Text += "Sum by Way 2 = " + sum2.ToString() + "\r\n";
+			textBox4.Text += "Sum by Way 3 = " + sum3.ToString() + "\r\n\r\n";
+			textBox4.SelectionStart = textBox4.Text.Length;
+			textBox4.ScrollToCaret();
 		}
 	}
 }
