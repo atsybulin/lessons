@@ -34,7 +34,7 @@ namespace MainForm
 			double sum2 = 1;
 			double sum3 = 1;
 			int n;
-			double x = (double)numericUpDown1.Value;
+			int x = (int)numericUpDown1.Value;
 			
 			// Way 1
 			for (n = 1; n <= 5; n++) {

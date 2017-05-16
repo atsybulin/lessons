@@ -54,7 +54,7 @@ namespace MainForm
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(12, 9);
+			this.label1.Location = new System.Drawing.Point(12, 17);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(27, 23);
 			this.label1.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace MainForm
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(197, 4);
+			this.button1.Location = new System.Drawing.Point(197, 12);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 2;
@@ -77,7 +77,8 @@ namespace MainForm
 			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.ColumnHeadersVisible = false;
-			this.dataGridView1.Location = new System.Drawing.Point(12, 35);
+			this.dataGridView1.Location = new System.Drawing.Point(12, 41);
+			this.dataGridView1.MultiSelect = false;
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersVisible = false;
 			this.dataGridView1.Size = new System.Drawing.Size(260, 50);
@@ -85,7 +86,7 @@ namespace MainForm
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(12, 91);
+			this.button2.Location = new System.Drawing.Point(12, 97);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(260, 23);
 			this.button2.TabIndex = 4;
@@ -95,7 +96,7 @@ namespace MainForm
 			// 
 			// numericUpDown1
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(45, 7);
+			this.numericUpDown1.Location = new System.Drawing.Point(45, 15);
 			this.numericUpDown1.Minimum = new decimal(new int[] {
 			3,
 			0,
@@ -112,11 +113,11 @@ namespace MainForm
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(12, 120);
+			this.textBox1.Location = new System.Drawing.Point(12, 126);
 			this.textBox1.Multiline = true;
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox1.Size = new System.Drawing.Size(260, 130);
+			this.textBox1.Size = new System.Drawing.Size(260, 124);
 			this.textBox1.TabIndex = 6;
 			// 
 			// Form7
