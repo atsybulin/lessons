@@ -234,8 +234,9 @@ namespace MainForm
 			this.button14.Name = "button14";
 			this.button14.Size = new System.Drawing.Size(260, 23);
 			this.button14.TabIndex = 14;
-			this.button14.Text = "Task 4.2";
+			this.button14.Text = "Task 4.4";
 			this.button14.UseVisualStyleBackColor = true;
+			this.button14.Click += new System.EventHandler(this.Button14Click);
 			// 
 			// button13
 			// 
@@ -243,8 +244,9 @@ namespace MainForm
 			this.button13.Name = "button13";
 			this.button13.Size = new System.Drawing.Size(260, 23);
 			this.button13.TabIndex = 13;
-			this.button13.Text = "Task 4.2";
+			this.button13.Text = "Task 4.3";
 			this.button13.UseVisualStyleBackColor = true;
+			this.button13.Click += new System.EventHandler(this.Button13Click);
 			// 
 			// button11
 			// 
@@ -264,6 +266,7 @@ namespace MainForm
 			this.button12.TabIndex = 12;
 			this.button12.Text = "Task 4.2";
 			this.button12.UseVisualStyleBackColor = true;
+			this.button12.Click += new System.EventHandler(this.Button12Click);
 			// 
 			// MainForm
 			// 

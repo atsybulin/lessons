@@ -138,7 +138,6 @@ namespace MainForm
 			this.Name = "Form10";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Task 3.5";
-			this.Load += new System.EventHandler(this.Form10Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);

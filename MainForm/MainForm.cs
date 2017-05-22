@@ -84,10 +84,20 @@ namespace MainForm
 			Form11 frm41 = new Form11();
 			frm41.ShowDialog();
 		}
-		void ComboBox1SelectedIndexChanged(object sender, EventArgs e)
+		void Button12Click(object sender, EventArgs e)
 		{
-			Form frm = new Form();
-			frm.ShowDialog();
+			Form12 frm42 = new Form12();
+			frm42.ShowDialog();
+		}
+		void Button13Click(object sender, EventArgs e)
+		{
+			Form13 frm43 = new Form13();
+			frm43.ShowDialog();
+		}
+		void Button14Click(object sender, EventArgs e)
+		{
+//			Form14 frm44 = new Form14();
+//			frm44.ShowDialog();
 		}
 	}
 }

@@ -28,9 +28,6 @@ namespace MainForm
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		void Form10Load(object sender, EventArgs e)
-		{
-		}
 		void Button1Click(object sender, EventArgs e)
 		{
 			double fx;
@@ -45,7 +42,7 @@ namespace MainForm
 					fx = (a * x * x + 3) / zn;
 					textBox1.Text += fx.ToString() + "\r\n";
 				} else {
-					textBox1.Text += "Error! Divide by zero.\r\n";
+					textBox1.Text += "(Error! Divide by zero.)\r\n";
 				}
 				textBox1.SelectionStart = textBox1.Text.Length;
 				textBox1.ScrollToCaret();
@@ -59,7 +56,7 @@ namespace MainForm
 					fx = (a * x * x + 3) / zn;
 					textBox2.Text += fx.ToString() + "\r\n";
 				} else {
-					textBox2.Text += "Error! Divide by zero.\r\n";
+					textBox2.Text += "(Error! Divide by zero.)\r\n";
 				}
 				textBox2.SelectionStart = textBox2.Text.Length;
 				textBox2.ScrollToCaret();
@@ -74,7 +71,7 @@ namespace MainForm
 					fx = (a * x * x + 3) / zn;
 					textBox3.Text += fx.ToString() + "\r\n";
 				} else {
-					textBox3.Text += "Error! Divide by zero.\r\n";
+					textBox3.Text += "(Error! Divide by zero.)\r\n";
 				}
 				textBox3.SelectionStart = textBox3.Text.Length;
 				textBox3.ScrollToCaret();
