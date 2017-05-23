@@ -58,7 +58,7 @@ namespace MainForm
 		void Button3Click(object sender, EventArgs e)
 		{
 			bool isNum1, isNum2, sort = true; //, unSort = false;
-			int num1, num2, nus, i;
+			int num1, num2, nus = 0, i;
 			
 			int n = (int)numericUpDown1.Value;
 			dataGridView2.ColumnCount = n;
@@ -92,7 +92,7 @@ namespace MainForm
 			for (i = 0; i < n; i++) {
 				textBox1.Text += (i > 0 ? ", " : "Result array: ") + dataGridView2[i, 0].Value.ToString();
 			}
-			textBox1.Text += "\r\n\r\n";
+			textBox1.Text += "\r\n" + (nus > 0 ? "Number first unsort position: " + nus.ToString() : "Array is sorted") + "\r\n\r\n";
 			textBox1.SelectionStart = textBox1.Text.Length;
 			textBox1.ScrollToCaret();
 		}
