@@ -91,7 +91,7 @@ namespace MainForm
 			for (i = 0; i < n; i++) {
 				textBox1.Text += (i > 0 ? ", " : "Result array: ") + dataGridView2[i, 0].Value.ToString();
 			}
-			textBox1.Text += "\r\n" + (n > 0 ? "Number first unsort position: " + nus.ToString() : "Array is sorted") + "\r\n\r\n";
+			textBox1.Text += "\r\n" + (nus > 0 ? "Number first unsort position: " + nus.ToString() : "Array is sorted") + "\r\n\r\n";
 			textBox1.SelectionStart = textBox1.Text.Length;
 			textBox1.ScrollToCaret();
 		}
