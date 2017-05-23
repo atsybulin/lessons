@@ -57,27 +57,26 @@ namespace MainForm
 		}
 		void Button3Click(object sender, EventArgs e)
 		{
-			bool isNum1, isNum2, sort = true; //, unSort = false;
-			int num1, num2, nus, i;
+			bool isNum1, isNum2, sort = true;
+			int num1, num2, nus = 0, i;
 			
 			int n = (int)numericUpDown1.Value;
 			dataGridView2.ColumnCount = n;
-			for (i = 0; i < n; i++) {
-				dataGridView2[i, 0].Value = dataGridView1[i, 0].Value;
-			}
-			i = 0;
-			while (sort && i < n - 1) {
+			for (i = 0; i < n - 1; i++) {
 				isNum1 = int.TryParse(dataGridView1[i, 0].Value.ToString(), out num1);
 				isNum2 = int.TryParse(dataGridView1[i + 1, 0].Value.ToString(), out num2);
 				if (isNum1 && isNum2) {
-					if (num1 < num2) {
+					if (num1 < num2 && sort) {
 						sort = false;
-						nus = i + 1;
 						dataGridView2[i, 0].Value = num2.ToString();
 						dataGridView2[i + 1, 0].Value = num1.ToString();
+						i++;
+						nus = i;
+					} else {
+						dataGridView2[i, 0].Value = dataGridView1[i, 0].Value;
+						dataGridView2[i + 1, 0].Value = dataGridView1[i + 1, 0].Value;
 					}
 				}
-				i++;
 			}
 			if (sort) {
 				dataGridView2[0, 0].Value = Math.Pow(int.Parse(dataGridView1[0, 0].Value.ToString()), 2).ToString();
@@ -92,7 +91,7 @@ namespace MainForm
 			for (i = 0; i < n; i++) {
 				textBox1.Text += (i > 0 ? ", " : "Result array: ") + dataGridView2[i, 0].Value.ToString();
 			}
-			textBox1.Text += "\r\n\r\n";
+			textBox1.Text += "\r\n" + (n > 0 ? "Number first unsort position: " + nus.ToString() : "Array is sorted") + "\r\n\r\n";
 			textBox1.SelectionStart = textBox1.Text.Length;
 			textBox1.ScrollToCaret();
 		}
