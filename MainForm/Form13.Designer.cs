@@ -59,7 +59,7 @@ namespace MainForm
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(12, 43);
+			this.label1.Location = new System.Drawing.Point(185, 43);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(26, 19);
 			this.label1.TabIndex = 24;
@@ -68,7 +68,7 @@ namespace MainForm
 			// button3
 			// 
 			this.button3.Enabled = false;
-			this.button3.Location = new System.Drawing.Point(12, 123);
+			this.button3.Location = new System.Drawing.Point(185, 123);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(260, 23);
 			this.button3.TabIndex = 23;
@@ -83,12 +83,12 @@ namespace MainForm
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ReadOnly = true;
 			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox1.Size = new System.Drawing.Size(260, 159);
+			this.textBox1.Size = new System.Drawing.Size(635, 159);
 			this.textBox1.TabIndex = 22;
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(138, 38);
+			this.button2.Location = new System.Drawing.Point(311, 38);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(134, 23);
 			this.button2.TabIndex = 21;
@@ -98,7 +98,7 @@ namespace MainForm
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(12, 12);
+			this.button1.Location = new System.Drawing.Point(185, 12);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(260, 23);
 			this.button1.TabIndex = 20;
@@ -108,7 +108,7 @@ namespace MainForm
 			// 
 			// numericUpDown1
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(44, 41);
+			this.numericUpDown1.Location = new System.Drawing.Point(217, 41);
 			this.numericUpDown1.Minimum = new decimal(new int[] {
 			2,
 			0,
@@ -136,7 +136,7 @@ namespace MainForm
 			this.dataGridView2.ReadOnly = true;
 			this.dataGridView2.RowHeadersVisible = false;
 			this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-			this.dataGridView2.Size = new System.Drawing.Size(260, 50);
+			this.dataGridView2.Size = new System.Drawing.Size(635, 50);
 			this.dataGridView2.TabIndex = 18;
 			// 
 			// dataGridView1
@@ -151,14 +151,14 @@ namespace MainForm
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersVisible = false;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(260, 50);
+			this.dataGridView1.Size = new System.Drawing.Size(635, 50);
 			this.dataGridView1.TabIndex = 17;
 			// 
 			// Form13
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(285, 377);
+			this.ClientSize = new System.Drawing.Size(659, 377);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.textBox1);

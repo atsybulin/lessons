@@ -58,23 +58,23 @@ namespace MainForm
 		void Button3Click(object sender, EventArgs e)
 		{
 			bool isNum;
-			int num;
+			int num, i;
 			
 			int n = (int)numericUpDown1.Value;
 			dataGridView2.ColumnCount = n;
-			for (int i = 0; i < n; i++) {
+			for (i = 0; i < n; i++) {
 				isNum = int.TryParse(dataGridView1[i, 0].Value.ToString(), out num);
 				if (isNum) {
 					dataGridView2[i, 0].Value = num < 0 ? (int.Parse(dataGridView1[i, 0].Value.ToString()) / 3) : dataGridView1[i, 0].Value;
 				}
 			}
 			
-			// добавить вывод в лог
-			for (int i = 0; i < n; i++) {
+			// вывод в лог
+			for (i = 0; i < n; i++) {
 				textBox1.Text += (i > 0 ? ", " : "Source array: ") + dataGridView1.Rows[0].Cells[i].Value.ToString();
 			}
 			textBox1.Text += "\r\n";
-			for (int i = 0; i < n; i++) {
+			for (i = 0; i < n; i++) {
 				textBox1.Text += (i > 0 ? ", " : "Result array: ") + dataGridView2.Rows[0].Cells[i].Value.ToString();
 			}
 			textBox1.Text += "\r\n\r\n";

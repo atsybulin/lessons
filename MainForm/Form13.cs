@@ -41,9 +41,9 @@ namespace MainForm
 			button2.PerformClick();
 			int n = (int)numericUpDown1.Value;
 			for (int i = 0; i < n; i++) {
-				dataGridView1[i, 0].Value = (rnd.Next(100) - 50).ToString();
+				dataGridView1[i, 0].Value = (rnd.Next(50) - 25).ToString();
 			}
-			button3.Enabled = true;
+//			button3.Enabled = true;
 			button3.PerformClick();
 		}
 		void Button2Click(object sender, EventArgs e)
@@ -57,32 +57,44 @@ namespace MainForm
 		}
 		void Button3Click(object sender, EventArgs e)
 		{
-			bool isNum1, isNum2, unSort = false, sort = true;
-			int num1, num2, nu;
+			bool isNum1, isNum2, sort = true; //, unSort = false;
+			int num1, num2, nus, i;
 			
 			int n = (int)numericUpDown1.Value;
 			dataGridView2.ColumnCount = n;
-//			while (sort && i < n-1) {}
-			for (int i = 0; i < n-1; i++) {
+			for (i = 0; i < n; i++) {
+				dataGridView2[i, 0].Value = dataGridView1[i, 0].Value;
+			}
+			i = 0;
+			while (sort && i < n - 1) {
 				isNum1 = int.TryParse(dataGridView1[i, 0].Value.ToString(), out num1);
-				isNum2 = int.TryParse(dataGridView1[i+1, 0].Value.ToString(), out num2);
+				isNum2 = int.TryParse(dataGridView1[i + 1, 0].Value.ToString(), out num2);
 				if (isNum1 && isNum2) {
-					if (num1 > num2) {
-						unSort = true;
-						nu = i;
-						
+					if (num1 < num2) {
+						sort = false;
+						nus = i + 1;
+						dataGridView2[i, 0].Value = num2.ToString();
+						dataGridView2[i + 1, 0].Value = num1.ToString();
 					}
-//					if (num < 0) {
-//						dataGridView2[i, 0].Value = (int.Parse(dataGridView1[i, 0].Value.ToString()) / 3);
-//					} else {
-//						dataGridView2[i, 0].Value = dataGridView1[i, 0].Value;
-//					}
 				}
+				i++;
 			}
 			if (sort) {
-				Math.Pow(int.Parse(dataGridView1[0, 0].Value.ToString()), 2);
-				Math.Pow(int.Parse(dataGridView1[n-1, 0].Value.ToString()), 2);
+				dataGridView2[0, 0].Value = Math.Pow(int.Parse(dataGridView1[0, 0].Value.ToString()), 2).ToString();
+				dataGridView2[n - 1, 0].Value = Math.Pow(int.Parse(dataGridView1[n - 1, 0].Value.ToString()), 2).ToString();
 			}
+			
+			// вывод в лог
+			for (i = 0; i < n; i++) {
+				textBox1.Text += (i > 0 ? ", " : "Source array: ") + dataGridView1[i, 0].Value.ToString();
+			}
+			textBox1.Text += "\r\n";
+			for (i = 0; i < n; i++) {
+				textBox1.Text += (i > 0 ? ", " : "Result array: ") + dataGridView2[i, 0].Value.ToString();
+			}
+			textBox1.Text += "\r\n\r\n";
+			textBox1.SelectionStart = textBox1.Text.Length;
+			textBox1.ScrollToCaret();
 		}
 	}
 }
