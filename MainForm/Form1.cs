@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace MainForm
 {
 	/// <summary>
-	/// Description of Form1.//sdfsdfsdf
+	/// Description of Form1.
 	/// </summary>
 	public partial class Form1 : Form
 	{
